@@ -12,6 +12,6 @@ https://brew.sh/
 brew install node
 ```
 
-### Cloud IDE
+### Cloud IDE (Linux Online)
 
 https://c9.io/
