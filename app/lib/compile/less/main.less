@@ -1,0 +1,36 @@
+body{
+    margin: 15px;
+}
+.card{
+    margin: 15px 0px;
+    &.editmode{
+        textarea,
+        input{
+            border: 1px solid #0079BF;
+            box-shadow: 0 0 2px 0 #0284C6;
+        }
+    }
+}
+.card-title{
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    margin: 0 0 0;
+    padding: 0rem .75rem;
+}
+.btn-toolbar{
+    margin: 0 0 15px;
+}
+.btn{
+    cursor: pointer;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.btn-group{
+    .btn{
+        width: 32px;
+        height: 32px;
+    }
+}
