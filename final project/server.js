@@ -4,6 +4,9 @@ var express = require('express');
 var server = express();
 // Include mongoose node module. This module provides interface with mongoDB client
 var mongoose  = require('mongoose');
+// Include the body-parser module to parse the body the HTTP POST method (sent from the app UI).
+var bodyParser = require('body-parser');
+
 // Use Schema var as shorthand for mongoose.Schema
 var Schema = mongoose.Schema;
 // Create a mongoose model for cards collection. 
@@ -36,6 +39,10 @@ mongoose.connection.once('open', function(){
 // We tell express to use this a folder path — not another webpage. 
 server.use('/lib', express.static(__dirname + '/lib'));
 
+// Configure server to use body-parser
+server.use(bodyParser.urlencoded({ extended: false }))
+server.use(bodyParser.json()); 
+
 // To load templates into the browser, a view engine like ejs is required.
 server.set('view engine', 'ejs');
 
@@ -46,6 +53,7 @@ server.set('port', process.env.PORT || 3000);
 server.listen(process.env.PORT || 3000, function(){
     console.log("Server is running!")
 });
+
 
 
 server.get('/home', function(req, res) {
