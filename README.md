@@ -21,7 +21,7 @@ https://c9.io/
 
 # Session 2
 
-Summary from the activities from Session 2 will be included here in a later update.
+Summary of the activities from Session 2 will be included here in a later update.
 
 ---
 
