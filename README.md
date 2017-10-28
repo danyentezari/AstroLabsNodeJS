@@ -1,3 +1,7 @@
+# Updates
+The files for the project are now included in this repo. Go to the 'final project' folder and read the instructions in README.md for 
+more details. The update includes fixes for the edit/delete issues.
+
 # Session 1
 ### Download and install NodeJS (Windows / Mac OS)
 
