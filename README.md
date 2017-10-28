@@ -1,4 +1,4 @@
-# Updates
+# Updates (Oct 28, 2017)
 The files for the app project are now included in this repo. Go to the 'final project' folder and read the instructions in README.md for 
 more details. The update includes fixes for the edit/delete buttons.
 
