@@ -5,10 +5,15 @@ the following code to download the node_modules folder into your working
 directory:
 
 ```
-npm init.
+npm init
 ```
 
-Once this is done, run the following command to start the server:
+Once this is done, run the following commands to start the database and server.
+Note: For mongoDB, make sure to cd to the directory where the db folder was created.
+
+```
+mongod --dbpath /location-of-db-folder
+```
 
 ```
 npm start
